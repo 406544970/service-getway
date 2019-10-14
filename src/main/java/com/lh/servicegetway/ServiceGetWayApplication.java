@@ -16,7 +16,6 @@ public class ServiceGetWayApplication {
     public static void main(String[] args) {
 //        SpringApplication.run(ServiceGetWayApplication.class, args);
         new SpringApplicationBuilder(ServiceGetWayApplication.class).web(WebApplicationType.REACTIVE).run(args);
-        System.out.println("http://localhost:2005/swagger-ui.html");
 
     }
 }
