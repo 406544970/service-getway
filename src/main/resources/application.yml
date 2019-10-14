@@ -1,0 +1,38 @@
+server:
+  port: 2005
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+#      routes:
+#      - id:v1
+#        uri:http://localhost:8000/v1
+#        filters:
+#        - AddRequestHeader=header,addHeader
+#        - AddRequestParameter=param,addParam
+#        predicates:
+#        - Path:=/weight
+#        - Weight=service1,5
+#      routes:
+#        id:aa
+#        uri:lb://SERVER-PROVIDER
+#        predicates:
+#          Path=/provider/**
+
+#    routes:
+#            - id: provider-routes
+#              uri: lb://SERVER-PROVIDER     #lb:从eureka中获取服务
+#              predicates:
+#                - Path=/provider/**
+#          spring.application.name=getWay-architecture
+#          eureka.client.serviceUrl.defaultZone=http://${eurekaUserName}:${eurekaPassWord}@peer1:2021/eureka/,http://${eurekaUserName}:${eurekaPassWord}@peer2:2022/eureka/
+#          eureka.instance.lease-renewal-interval-in-seconds=8
+#          eureka.instance.lease-expiration-duration-in-seconds=4
+#          eurekaUserName=lian
+#          eurekaPassWord=lian
+#
+
